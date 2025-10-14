@@ -6,8 +6,6 @@
 
 This assignment focuses on understanding environments, variable scoping, and the relationship between `let` expressions and procedure applications. Unlike previous assignments, **PA5 is completed on paper** (or drawn digitally) and submitted as a single PDF document.
 
-Questions 8-9 from the previous semester's Assignment 3 were released as the coding portion in PA4. This assignment contains the theoretical foundation questions (1-7) that complement that work.
-
 ## The V5 Language
 
 All questions reference the **V5 language** from PLCC, which includes:
@@ -15,7 +13,7 @@ All questions reference the **V5 language** from PLCC, which includes:
 - Basic arithmetic operations: `+`, `-`, `*`, `/`
 - Let expressions: `let x = <exp> in <body>`
 - Procedures: `proc(<params>) <body>`
-- Procedure application: `.<proc>(<args>)`
+- Procedure application: `.proc(<args>)`
 - Recursive procedures: `letrec f = proc(<params>) <body> in <exp>`
 - Conditionals: `if <test> then <consequent> else <alternative>`
 - Built-in operations: `add1`, `sub1`, `zero?`
@@ -31,7 +29,7 @@ For questions 1-5, **draw environment diagrams** showing all environments create
 
 ### Important Reminders
 
-- **Only `let` expressions and procedure applications create new environments**
+- **Only `let` expressions and `proc` applications create new environments**
 - Primitive operations (like `+`, `sub1`) do NOT create new environments
 - Show all bindings in each environment
 - Draw arrows to parent environments to show environment chaining
@@ -94,7 +92,6 @@ in
 
 - The environment captured by the procedure `p` (closure)
 - The new environment created when `.p(5)` is applied
-- How the free variable `x` in the procedure body is resolved
 
 ---
 
@@ -120,7 +117,6 @@ in
 - The environment where `x` is bound
 - The environment captured by the procedure
 - The environment created when `.f(5)` is applied
-- How both `t` parameters and the `x` variable are resolved
 
 ---
 
