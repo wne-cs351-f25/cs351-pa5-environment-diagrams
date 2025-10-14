@@ -1,4 +1,4 @@
-# PA5 - Procedures and Functions (Paper Assignment)
+# PA5 - Environment Diagrams (Paper Assignment)
 
 **Due: Monday, Oct 27 at 11:59 PM**
 
