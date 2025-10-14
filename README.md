@@ -25,7 +25,7 @@ You can reference the V5 grammar and examples at:
 
 ---
 
-## Part 1: Environment Diagrams (Questions 1-5)
+## Part 1: Drawing Diagrams (Questions 1-5)
 
 For questions 1-5, **draw environment diagrams** showing all environments created during evaluation of the given expressions. Start with an empty initial environment.
 
