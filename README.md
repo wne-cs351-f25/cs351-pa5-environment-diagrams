@@ -23,9 +23,9 @@ You can reference the V5 grammar and examples at:
 
 ---
 
-## Part 1: Drawing Diagrams (Questions 1-5)
+## Drawing Diagrams (Questions 1-5)
 
-For questions 1-5, **draw environment diagrams** showing all environments created during evaluation of the given expressions. Start with an empty initial environment.
+Show all environments created during evaluation of the given expressions. Start with an empty initial environment.
 
 ### Important Reminders
 
@@ -146,79 +146,18 @@ in
 
 ---
 
-## Part 2: Let-to-Procedure Transformation (Questions 6-7)
-
-The V-languages demonstrate that `let` expressions are syntactic sugar for procedure applications. Specifically:
-
-```
-let x = <exp> in <body>
-```
-
-is equivalent to:
-
-```
-.proc(x) <body>(<exp>)
-```
-
-For questions 6-7, **transform the given expressions** by replacing all `let` expressions with procedure applications using the algorithm above. Make no other changes to the expressions.
-
-### Verification
-
-You are **strongly encouraged** to test your transformations using the V4 REPL:
-
-1. Evaluate the original expression and note the result
-2. Evaluate your transformed expression
-3. Verify both produce the same result
-
----
-
-### Question 6
-
-Replace all `let` expressions in the following with procedure applications. Your answer should contain **no `let` keywords**.
-
-```
-let
-  x = 3
-  y = 5
-  z = 8
-in
-  +(x,+(y,z))
-```
-
-**Hint:** Multiple bindings in a single `let` can be handled by nested procedure applications.
-
----
-
-### Question 7
-
-Replace all `let` expressions in the following with procedure applications. Your answer should contain **no `let` keywords**.
-
-```
-let
-  x = 3
-in
-  let
-    y = 5
-  in
-    +(x,+(y,2))
-```
-
-**Hint:** Work from the inside out. Transform the innermost `let` first, then work outward.
-
----
-
 ## Submission
 
 **To Submit:**
 
-1. Complete all 7 questions on paper or using a digital drawing tool
+1. Complete all 5 questions on paper or using a digital drawing tool
 2. If drawing by hand, use clear, dark lines (consider tracing with a marker for legibility)
 3. Ensure all text is readable and environments/bindings are clearly labeled
 
 **Submission Options (choose one):**
 
 - **Option A - Digital Submission**: Convert your work to a **single PDF file** named `pa5-YOURNAME.pdf` and upload to Kodiak by Monday, Oct 27 at 11:59 PM
-- **Option B - Physical Submission**: Hand in a physical copy in class on Tuesday, Oct 27 (Midterm day)
+- **Option B - Physical Submission**: Hand in a physical copy in class on Monday, Oct 27 (Midterm day)
 
 **Drawing Guidelines:**
 
